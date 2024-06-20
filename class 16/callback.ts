@@ -1,3 +1,4 @@
+//Callback
 function prepareTea(task:string,delay:number, cb:()=>void){
     console.log(task);
     setTimeout(() => {
