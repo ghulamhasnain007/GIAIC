@@ -1,12 +1,17 @@
 
+interface AnimalType{
+    name: string;
+    age: number;
+    makeSound: ()=> void
+}
 
-class Animals{
+class Animals implements AnimalType{
     constructor(animalName:string, animalAge:number){
          this.name = animalName;
         this.age= animalAge;
     }
-    name!: string;
-    age!: number;
+    name: string;
+    age: number;
 
     makeSound():void{
         console.log(`${this.name} make sound!`);
